@@ -1,0 +1,21 @@
+{
+  "FileVersion": 2,
+  "ProjectArguments": [
+    {
+      "Id": "535cd557-b838-4b47-be4a-c5468bf59456",
+      "Command": "PracticalDSA.vcxproj",
+      "Items": [
+        {
+          "Id": "367b0d7a-3d95-454f-ade7-51eaec6afe9f",
+          "Command": "Tests",
+          "Items": [
+            {
+              "Id": "3f59c9cb-c5ae-4148-b301-44c8989cfbe7",
+              "Command": "[pool]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

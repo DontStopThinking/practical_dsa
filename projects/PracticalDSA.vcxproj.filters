@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\code\main.cpp" />
+    <ClCompile Include="..\code\arena\arena_test.cpp">
+      <Filter>arena</Filter>
+    </ClCompile>
+    <ClCompile Include="..\code\pool\pool_test.cpp">
+      <Filter>pool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\code\arena\arena.h">
+      <Filter>arena</Filter>
+    </ClInclude>
+    <ClInclude Include="..\code\pool\pool.h">
+      <Filter>pool</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="extern">
+      <UniqueIdentifier>{e4732dbf-c79b-45af-9bc1-28db71e06124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arena">
+      <UniqueIdentifier>{b12a8e1f-8297-4f3a-a0da-07a2bf5c0358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pool">
+      <UniqueIdentifier>{c76338fb-b254-4ef0-83c3-7becceb3050a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\code\pool\README.md">
+      <Filter>pool</Filter>
+    </None>
+    <None Include="vcpkg.json" />
+    <None Include="vcpkg-configuration.json" />
+    <None Include="..\.gitignore" />
+    <None Include="..\README.md" />
+  </ItemGroup>
+</Project>

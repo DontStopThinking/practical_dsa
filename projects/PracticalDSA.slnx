@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Debug_Test" />
+    <BuildType Name="Release" />
+    <BuildType Name="Release_Test" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="PracticalDSA.vcxproj" Id="535cd557-b838-4b47-be4a-c5468bf59456" />
+</Solution>
