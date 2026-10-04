@@ -8,6 +8,9 @@
     <ClCompile Include="..\code\pool\pool_test.cpp">
       <Filter>pool</Filter>
     </ClCompile>
+    <ClCompile Include="..\code\ringbuffer\ringbuffer_test.cpp">
+      <Filter>ringbuffer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\code\arena\arena.h">
@@ -16,16 +19,577 @@
     <ClInclude Include="..\code\pool\pool.h">
       <Filter>pool</Filter>
     </ClInclude>
+    <ClInclude Include="..\code\ringbuffer\ringbuffer.h">
+      <Filter>ringbuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_all.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_analyse.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_approx.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_assertion_handler.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_assertion_info.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_assertion_result.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_benchmark.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_benchmark_all.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_benchmark_function.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_benchmark_stats.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_benchmark_stats_fwd.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_case_insensitive_comparisons.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_case_sensitive.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_chronometer.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_clara.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_clock.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_commandline.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_compare_traits.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_compiler_capabilities.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_complete_invoke.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_config.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_config_android_logwrite.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_config_counter.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_config_prefix_messages.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_config_static_analysis_support.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_config_uncaught_exceptions.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_config_wchar.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_console_colour.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_console_width.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_constructor.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_container_nonmembers.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_context.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_debug_console.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_debugger.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_decomposer.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_deprecation_macro.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_enforce.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_enum_info.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_environment.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_errno_guard.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_estimate.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_estimate_clock.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_exception_translator_registry.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_execution_plan.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_fatal_condition_handler.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_floating_point_helpers.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\generators\catch_generator_exception.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\generators\catch_generators.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\generators\catch_generators_adapters.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\generators\catch_generators_all.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\generators\catch_generators_random.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\generators\catch_generators_range.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\generators\catch_generators_throw.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_get_random_seed.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_getenv.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_all.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_capture.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_config.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_exception.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_generatortracker.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_registry_hub.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_reporter.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_reporter_factory.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_tag_alias_registry.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_test_invoker.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\interfaces\catch_interfaces_testcase.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_is_permutation.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_istream.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_jsonwriter.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_lazy_expr.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_leak_detector.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_lifetimebound.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_list.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_logical_traits.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_all.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_container_properties.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_contains.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_exception.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_floating_point.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\internal\catch_matchers_impl.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_predicate.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_quantifiers.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_range_equals.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_string.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_templated.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\matchers\catch_matchers_vector.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_measure.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_message.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_message_info.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_meta.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_move_and_forward.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_noncopyable.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_optimizer.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_optional.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_outlier_classification.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_output_redirect.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_parse_numbers.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_path_filter.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_platform.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_polyfills.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_preprocessor.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_preprocessor_internal_stringify.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_preprocessor_remove_parens.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_random_floating_point_helpers.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_random_integer_helpers.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_random_number_generator.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_random_seed_generation.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_repeat.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_automake.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_common_base.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_compact.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_console.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_cumulative_base.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_event_listener.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_helpers.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_json.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_junit.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_multi.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_registrars.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_reporter_registry.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_sonarqube.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_reporter_spec_parser.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_streaming_base.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_tap.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_teamcity.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporter_xml.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\reporters\catch_reporters_all.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_result_type.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_reusable_string_stream.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_run_context.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_run_for_at_least.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\catch_sample_analysis.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_section.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_section_info.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_session.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_sharding.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_singletons.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_source_line_info.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_startup_exception_registry.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_stats.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_stdstreams.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_stream_end_stop.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_string_manip.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_stringref.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_tag_alias.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_tag_alias_autoregistrar.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_tag_alias_registry.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_template_test_macros.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_template_test_registry.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_test_case_info.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_test_case_info_hasher.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_test_case_registry_impl.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_test_case_tracker.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_test_failure_exception.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_test_macro_impl.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_test_macros.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_test_registry.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_test_run_info.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_test_spec.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_test_spec_parser.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_textflow.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_thread_local.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_thread_support.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_timer.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\benchmark\detail\catch_timing.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_to_string.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_tostring.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_totals.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_translate_exception.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_uncaught_exceptions.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_uniform_floating_point_distribution.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_uniform_integer_distribution.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_unique_name.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_unique_ptr.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_unreachable.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_user_config.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_version.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\catch_version_macros.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_void_type.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_wildcard_pattern.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_windows_h_proxy.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
+    <ClInclude Include="vcpkg_installed\x64-windows\x64-windows\include\catch2\internal\catch_xmlwriter.hpp">
+      <Filter>extern\catch2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="extern">
-      <UniqueIdentifier>{e4732dbf-c79b-45af-9bc1-28db71e06124}</UniqueIdentifier>
-    </Filter>
     <Filter Include="arena">
       <UniqueIdentifier>{b12a8e1f-8297-4f3a-a0da-07a2bf5c0358}</UniqueIdentifier>
     </Filter>
     <Filter Include="pool">
       <UniqueIdentifier>{c76338fb-b254-4ef0-83c3-7becceb3050a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ringbuffer">
+      <UniqueIdentifier>{994c0cda-4b82-4bb5-b5fa-50293faf6d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern">
+      <UniqueIdentifier>{c00116a2-aee0-467d-b79e-efcaf170f00d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extern\catch2">
+      <UniqueIdentifier>{26612043-de5d-4ffd-9565-a3e97cf9624b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -36,5 +600,8 @@
     <None Include="vcpkg-configuration.json" />
     <None Include="..\.gitignore" />
     <None Include="..\README.md" />
+    <None Include="..\code\ringbuffer\README.md">
+      <Filter>ringbuffer</Filter>
+    </None>
   </ItemGroup>
 </Project>

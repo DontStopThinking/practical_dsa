@@ -10,6 +10,10 @@
           "Command": "Tests",
           "Items": [
             {
+              "Id": "c6aabc43-56af-442e-b67c-d762f650928c",
+              "Command": "[ringbuffer]"
+            },
+            {
               "Id": "3f59c9cb-c5ae-4148-b301-44c8989cfbe7",
               "Command": "[pool]"
             }
