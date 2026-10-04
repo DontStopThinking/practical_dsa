@@ -15,5 +15,6 @@ for an extra performance boost. Overall, this is significantly faster than the l
 version is about 7 to 8 times faster than the lock version.
 
 ## Use cases
-- Logging. Since logging is kind of a "fire-and-forget" operationm, a Ring Buffer can be used to process temporary
+- Logging. Since logging is kind of a "fire-and-forget" operation, a Ring Buffer can be used to process temporary
 data (such as string interpolation for a log) and discard/overwrite it for the next log.
+- Generally, any use case where you need to transfer data between two threads in a specific order.
